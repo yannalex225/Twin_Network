@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Inscription.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>TWIN NETWORK</title>
+</head>
+<body>
+    <nav>
+        <span class="Titre"><a href="">TWIN NETWORK</a></span>
+        <ul>
+            <!-- <li><a href="" class="About">Infos</a></li> -->
+            <li>
+                <button type="submit" class="but_inscription">Inscription</button>
+            </li>
+            <li>
+                <button class="but_connexion">Connexion</button>
+            </li>
+        </ul>
+    </nav>
+    <section class="connexion">
+        <div class="curtain">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h2>CONNEXION</h2>
+        <form action="auth.php">
+            <div class="input">
+                <input name="" required="" type="email">
+                <Label>Adresse Mail</Label>
+            </div>
+            <div class="input">
+                <input type="password" name="" required="">
+                <Label>Mot De Passe</Label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="" id="">
+                <span>Se souvenir de moi</span>
+            </div>
+            <input type="submit" value="Connexion">
+        </form>
+    </section>
+    <section class="inscription">
+        <div class="curtain_ins">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h2>Inscription</h2>
+        <form action="inscri.php" method="post">
+            <div class="input">
+                <input name="nom" required="" type="text">
+                <Label for="nom">Nom</Label>
+            </div>
+            <div class="input">
+                <input type="text" name="prenom" required="">
+                <Label for="prenom">Prenom</Label>
+            </div>
+            <div class="input">
+                <input type="date" name="date" required="">
+                <Label for="date">Date de naissance</Label>
+            </div>
+            <div class="input">
+                <input type="mail" name="mail" required="">
+                <Label for="mail">Entrer votre mail</Label>
+            </div>
+            <div class="genre">
+                <label for=""> <u>Sexe :</u> </label>
+                <div class="homme">
+                    <input type="radio" name="genre" id="M">
+                    <span>M</span>
+                </div>
+                <div class="femme">
+                    <input type="radio" name="genre" id="F">
+                    <span>F</span>
+                </div>
+            </div>
+            <div class="input">
+                <input type="text" name="promo" required="">
+                <Label for="promo">Entrer la promo (Entrer IT?) </Label>
+            </div>
+            <div class="input">
+                <input type="password" name="password" required="">
+                <Label for="password">Mot de passe </Label>
+            </div>
+            <div class="input">
+                <input type="password" name="auth_password" required="">
+                <Label for="auth_password">Confirmer le mot de de passe </Label>
+            </div>
+            <input type="submit" value="Je m'inscris">
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="">
+                <span class="text">Se souvenir de moi</span>
+            </div>
+        </form>
+    </section>
+    <script src="../JS/Form.js"></script>
+</body>
+</html>
