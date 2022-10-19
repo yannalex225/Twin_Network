@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Inscription.css">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="../IMAGES/T_Grand.svg" type="image/svg">
+    <title>TWIN NETWORK</title>
+</head>
+<body>
+    <nav>
+        <span class="Titre"><a href=""> <img src="../IMAGES/Logo_Twin.svg" alt="Logo Twin Network" class="logo" width="30%"> </a></span>
+        <ul>
+            <!-- <li><a href="" class="About">Infos</a></li> -->
+            <li>
+                <button type="submit" class="but_inscription"><a href="Inscription.html"> Inscription </a></button>
+            </li>
+            <li>
+                <button class="but_connexion"><a href="Connexion.html"> Connexion </a></button>
+            </li>
+        </ul>
+    </nav>
+    <section class="main">
+        <img src="../IMAGES/ESATIC 3.jpg" alt="TWIN1" width="100%">
+        <section>
+                
+        </section>
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <img src="../IMAGES/code.png" alt="" width="100%"> </div>
+                    <div class="swiper-slide"> <img src="../IMAGES/ESATIC 3.jpg" alt="" width="100%"> </div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+            </div>
+            <!-- Slider main container -->
+    </section>
+    <footer>
+        <div class="foot">
+            <label for="newsletter"> SOUHAITEZ-VOUS TOUJOURS RESTER INFORMER DE LA TWIN ? <br> <span id="letter">SOUSCRIVEZ A NOTRE NEWSLETTER</span> </label>
+                <div class="news">
+                    <input type="text" name="newsletter" id="" class="letter" placeholder="Entrez votre mail ...">
+                    <input type="button" value="Souscrire" >
+                </div>
+        </div>
+    </footer>
+    <script src="../JS/Form.js"></script>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>

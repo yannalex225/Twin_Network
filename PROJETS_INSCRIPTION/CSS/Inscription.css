@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'CircularStd-Light';
-    src: url("FONTS/CircularStd-Light.otf");
+    font-family: 'Mabry-Pro-Medium';
+    src: url("../FONTS/Mabry-Pro-Medium.ttf");
 }
 @font-face {
     font-family: 'Chillax-Regular';
@@ -16,8 +16,12 @@ a{
     text-decoration: none;
     color: currentColor;
 }
-body{
-    min-height: 100vh;
+html{
+    height: 100%;
+}
+body{height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 nav{
     font-family:'Chillax-Regular' ;
@@ -29,35 +33,14 @@ nav{
     min-height:3.5rem ;
     color: white;
 }
-.curtain {
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    background-color: #fff;
-    transform: translate(320px,-20px);
-}
-div.curtain span {
-    position: absolute;
-    z-index: 3;
-    width: 20px;
-    height: 3px;
-    transform: translateY(9px) rotate(-45deg);
-    border-radius: 10px;
-    transition: 0.5s;
-    background: #000;
-}
-div.curtain span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-    background: #000;
+.logo{
+    margin-right: 50px;
 }
 ul{
     display: flex;
     justify-content:center ;
     gap: 5px;
     margin-right: -180px;
-}
-.About{
-    margin-right: -450px;
 }
 nav ul button{
     border: none;
@@ -74,19 +57,17 @@ nav .Titre a{
     margin-left: 0;
 }
 section.connexion{
-    visibility: hidden;
     font-family:'Chillax-Regular' ;
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-40%);
+    transform: translateX(50%);
     width: 400px;
     background:linear-gradient(29deg,#00b7ff,blue);
     padding: 40px;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0,0,.5);
     border-radius: 10px;
+    margin: 20px 0;
+    margin-left: 150px;
 }
 .connexion h2{
     font-family:'Chillax-Regular' ;
@@ -138,48 +119,9 @@ section.connexion{
     cursor: pointer;
     border-radius: 5px;
     margin-left: 33%;
-    font-family:'Chillax-Regular' ;
-}
-.checkbox{
-    padding-bottom: 10px;
+    font-family:'Chillax-Regular';
 }
 
-input[type="checkbox"]{
-    position: relative;
-    width: 40px;
-    height: 20px;
-    appearance: none;
-    background-color: #c6c6c6;
-    outline: none;
-    border-radius: 20px;
-    transition: color .5s;
-    box-shadow: inset 0 0 5px rgba(0, 0,0,.2);
-}
-input:checked[type="checkbox"]{
-    background-color: #029D0A;
-}
-input[type="checkbox"]::before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    transition: .5s;
-    box-shadow: 0 2px 5px rgba(0, 0,0,.2);
-    transform: scale(1.1);
-}
-input:checked[type="checkbox"]::before{
-    left: 20px;
-}
-.checkbox span.text{
-    transform:translateY(410px) !important;
-}
-section.connexion.active{
-    visibility: visible;
-}
 .connexion input[type="submit"]{
     border: none;
     outline:none;
@@ -194,22 +136,17 @@ section.connexion.active{
     font-family:'Chillax-Regular' ;
 }
 section.inscription{
-    visibility: hidden;
     font-family:'Chillax-Regular' ;
     color: white;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%,-40%);
     width: 400px;
     background:linear-gradient(29deg,#00b7ff,blue);
     padding: 20px;
+    transform: translateX(50%);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0,0,.5);
     border-radius: 10px;
-}
-.inscription.active{
-    visibility: visible;
+    margin: 20px 0;
+    margin-left: 150px;
 }
 .inscription h2{
     font-family:'Chillax-Regular' ;
@@ -264,24 +201,59 @@ section.inscription{
     gap: 20px;
     margin-bottom: 40px;
 }
-.curtain_ins {
+footer{
+    margin-top: auto;
+    width: 100%;
+    background-image: linear-gradient(29deg,#00b7ff,#0000ff);
+    font-family: 'Mabry-Pro-Medium';
+    color: white;
+    padding: 20px 0;
+}
+.foot label{
+    margin-left: 30%;
+    transform: translateX(50%);
+}
+footer #letter{
+    margin-left: 30% !important;
+    transform: translateX(50%) !important;
+}
+footer input[type="text"]{
+    font-family: 'Mabry-Pro-Medium';
+    width: 40%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    transform: translateX(75%);
+    
+}
+footer input:focus[type="text"]{
+    outline: none;
+    border:none;
+}
+footer input[type="button"]{
+    font-family: 'Mabry-Pro-Medium';
+    width: 12%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
     cursor: pointer;
-    height: 20px;
-    width: 20px;
-    background-color: #fff;
-    transform: translate(350px,-10px);
+    transform: translateX(197%);
+    background: #000;
+    margin-right: 20%;
+    color: #fff;
+    margin-top: 10px;
 }
-div.curtain_ins span {
+footer input:hover[type="button"]{
+    background-image:linear-gradient(29deg,#00b7ff,blue); 
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.721) ,inset 0 0 5px rgba(0, 0, 0, 0.429);
+    transition: background-image .5s;
+}
+#canvas1{
     position: absolute;
-    z-index: 3;
-    width: 20px;
-    height: 3px;
-    transform: translateY(9px) rotate(-45deg);
-    border-radius: 10px;
-    transition: 0.5s;
-    background: #000;
-}
-div.curtain_ins span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-    background: #000;
+    z-index: -1;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
 }

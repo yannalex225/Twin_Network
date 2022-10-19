@@ -1,18 +1,18 @@
-var bouton = document.querySelector('.but_connexion')
-var connexion = document.querySelector('.connexion')
-var inscription = document.querySelector('.inscription')
-var b_inscript = document.querySelector('.but_inscription')
-var cross = document.querySelector('.curtain')
-var cross_ins = document.querySelector('.curtain_ins')
-cross_ins.addEventListener('click',(e)=>{
-    inscription.classList.remove('active')
-})
-cross.addEventListener('click',(e)=>{
-    connexion.classList.remove('active')
-})
-bouton.addEventListener('click',(e)=>{
-    connexion.classList.toggle('active')
-})
-b_inscript.addEventListener('click',(e)=>{
-    inscription.classList.toggle('active')
-})
+const canvas = document.getElementById("canvas1")
+const ctx = canvas.getContext('2d')
+canvas.width = window.innerWidth;
+canvas.height = windows.innerHeight;
+
+let particlesArray;
+
+let mouse = {
+    x:null,
+    y:null,
+    radius: (canvas.height/80)*(canvas.width/80)
+}
+
+windows.addEventListener('mousemove',
+    function(event){
+        mouse
+    }
+)
