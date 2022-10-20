@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @font-face {
     font-family: 'Mabry-Pro-Medium';
     src: url("../FONTS/Mabry-Pro-Medium.ttf");
@@ -5,6 +6,10 @@
 @font-face {
     font-family: 'Chillax-Regular';
     src: url("../FONTS/Chillax-Regular.otf");
+}
+@font-face {
+    font-family: 'SF-Pro-Text';
+    src: url("../FONTS/BAUBODKI.TTF");
 }
 *, ::after,::before{
     box-sizing: border-box;
@@ -256,4 +261,70 @@ footer input:hover[type="button"]{
     top: 0; left: 0;
     width: 100%;
     height: 100%;
+}
+.main .esatic {
+    position: relative;
+    z-index: -1;
+}
+.main .black{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    z-index: -1;
+    background-color: #00000057;
+    color: white;
+    width: 100%;
+    height: 143%;
+}
+.texte{
+    position: absolute;
+    font-family: 'Manrope';
+    top: 20%;
+    left: 10%;
+    font-size: 50px;
+    color: white;
+}
+.texte .twin{
+    font-size: 80px;
+    transform: translateY(80px);
+    background: linear-gradient(120deg,#379eff 0%,#1e65ff 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.texte span{
+    font-size: 60px;
+    background: linear-gradient(120deg,#379eff 0%,#1e65ff 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin: 10px 0;
+    font-family: 'Manrope';
+}
+.texte_twin{
+    margin: 30px 10px;
+    font-family: 'Manrope';
+}
+.texte_twin::first-letter{
+    font-family: 'SF-Pro-Text';
+    font-size: 60px;
+    line-height: 1px;
+    margin-left: 25px;
+}
+.TWIN{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.debouche{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'SF-Pro-Text';
+    font-size: 20px;
+}
+.liste{
+    list-style-type:circle !important;
 }
