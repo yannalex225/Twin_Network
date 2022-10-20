@@ -34,6 +34,7 @@ a{
 }
 html{
     height: 100%;
+    scroll-behavior: smooth;
 }
 body{height: 100%;
     display: flex;
@@ -337,4 +338,19 @@ footer input:hover[type="button"]{
 }
 div.list{
     transform: translateX(40px);
+}
+.read{
+    border: none;
+    outline:none;
+    color: #fff;
+    background: linear-gradient(120deg,#dcc91e 0%,#fdb101 100%);
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-family: 'Chillax-Regular';
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    z-index: 5; 
 }
